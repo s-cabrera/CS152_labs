@@ -1,11 +1,10 @@
 # CS152 Compiler Design Project
-
 A project that parses and compiles source code written in the MINI-L Language <br>
 by Stephanie Cabrera and Richard Duong
 
 ------------------------------------------------------------------------------
-<br><br>
 ## Phases
+<br><br>
 
 ### Phase 1: Lexical Analysis
 + The goal of this phase is to tokenize source code written in the MINI-L language
