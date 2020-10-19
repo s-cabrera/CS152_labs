@@ -1,5 +1,9 @@
 /* Regexes */
 
+digit = [0-9]
+float = {digit}*(\.)?{digit}+
+alpha = [a-zA-Z]
+whitespace [ \r\t\n]+
 
 %%
 
@@ -21,7 +25,7 @@
 	printf("THEN");
 	printf("ENDIF");
 	printf("ELSE");
-        printf("WHILE");
+  printf("WHILE");
 	printf("DO");
 	printf("FOR");
 	printf("BEGINLOOP");
@@ -36,20 +40,22 @@
 	printf("FALSE");
 	printf("RETURN");
 
-	/* 3) Identifiers */
+	/* 3) Identifiers and Integers */
+	printf("IDENT ", yytext);
+	printf("NUMBER ", yytext);
 
 	/* 4) Operators */	
-	printf("SUB");
-	printf("ADD");
-	printf("MULT");
-	printf("DIV");
-	printf("MOD");	
-	printf("EQ");
-	printf("NEQ");
-	printf("LTE");
-	printf("GTE");
-	printf("LT");
-	printf("GT");
+	-									printf("SUB");
+	\+								printf("ADD");
+	\*								printf("MULT");
+	\/								printf("DIV");
+	\%								printf("MOD");	
+	=									printf("EQ");
+	!=								printf("NEQ");
+	<=								printf("LTE");
+	>=								printf("GTE");
+	<									printf("LT");
+	>									printf("GT");
 
 	/* 5) Special Symbols */
 	printf("SEMICOLON");
@@ -61,7 +67,7 @@
 	printf("COMMA");
 		
 	/* 6) Whitespace */
-	printf("WHITESPACE");
+	{whitespace}			printf("WHITESPACE");
 
 %%
 
