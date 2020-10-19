@@ -3,8 +3,10 @@ A project that parses and compiles source code written in the MINI-L Language <b
 by Stephanie Cabrera and Richard Duong
 
 ------------------------------------------------------------------------------
+<br>
+
 ## Phases
-<br><br>
+<br>
 
 ### Phase 1: Lexical Analysis
 + The goal of this phase is to tokenize source code written in the MINI-L language
