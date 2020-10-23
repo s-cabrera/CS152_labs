@@ -7,34 +7,34 @@
 	printf("COMMENT");
 
 	/* 2) Keywords */
-	printf("FUNCTION");
-	printf("BEGIN_PARAMS");
-	printf("END_PARAMS");
-	printf("BEGIN_LOCALS");
-	printf("END_LOCALS");
-	printf("BEGIN_BODY");
-	printf("END_BODY");
-	printf("INTEGER");
-	printf("ARRAY");
-	printf("OF");
-	printf("IF");
-	printf("THEN");
-	printf("ENDIF");
-	printf("ELSE");
-        printf("WHILE");
-	printf("DO");
-	printf("FOR");
-	printf("BEGINLOOP");
-	printf("ENDLOOP");
-	printf("CONTINUE");
-	printf("READ");
-	printf("WRITE");
-	printf("AND");
-	printf("OR");
-	printf("NOT");
-	printf("TRUE");
-	printf("FALSE");
-	printf("RETURN");
+	printf("FUNCTION\n");
+	printf("BEGIN_PARAMS\n");
+	printf("END_PARAMS\n");
+	printf("BEGIN_LOCALS\n");
+	printf("END_LOCALS\n");
+	printf("BEGIN_BODY\n");
+	printf("END_BODY\n");
+	printf("INTEGER\n");
+	printf("ARRAY\n");
+	printf("OF\n");
+	printf("IF\n");
+	printf("THEN\n");
+	printf("ENDIF\n");
+	printf("ELSE\n");
+    printf("WHILE\n");
+	printf("DO\n");
+	printf("FOR\n");
+	printf("BEGINLOOP\n");
+	printf("ENDLOOP\n");
+	printf("CONTINUE\n");
+	printf("READ\n");
+	printf("WRITE\n");
+	printf("AND\n");
+	printf("OR\n");
+	printf("NOT\n");
+	printf("TRUE\n");
+	printf("FALSE\n");
+	printf("RETURN\n");
 
 	/* 3) Identifiers */
 
@@ -52,13 +52,13 @@
 	printf("GT");
 
 	/* 5) Special Symbols */
-	printf("SEMICOLON");
-	printf("L_PAREN");
-	printf("R_PAREN");
-	printf("L_SQUARE_BRACKET");
-	printf("R_SQUARE_BRACKET");
-	printf("COLON");
-	printf("COMMA");
+";"	printf("SEMICOLON");
+"("	printf("L_PAREN");
+")"	printf("R_PAREN");
+"["	printf("L_SQUARE_BRACKET");
+"]"	printf("R_SQUARE_BRACKET");
+":"	printf("COLON");
+","	printf("COMMA");
 		
 	/* 6) Whitespace */
 	printf("WHITESPACE");
