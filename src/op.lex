@@ -13,6 +13,7 @@
 \<						printf("LT\n");
 \>						printf("GT\n");
 .							;
+\n						;
 %%
 
 int main(){

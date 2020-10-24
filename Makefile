@@ -58,15 +58,23 @@ lexer-num: flex-num
 flex-num: 
 	$(F) src/num.lex
 
-### Whitespace
-white.min: lexer-white
-	cat tests/white.min | bin/./lexer-white > output/white.out
+### Error Symbols
+unrec_error.min: lexer-unrec_error
+	cat tests/unrec_error.min | bin/./lexer-unrec_error > output/unrec_error.out
 
-lexer-white: flex-white
-	$(CC) $(CFLAGS) bin/lexer-white lex.yy.c $(LFLAGS)
+lexer-unrec_error: flex-unrec_error
+	$(CC) $(CFLAGS) bin/lexer-unrec_error lex.yy.c $(LFLAGS)
 
-flex-white:
-	$(F) src/white.lex
+flex-unrec_error:
+	$(F) src/unrec_error.lex
+	
+### Error Identifiers
+iden_error.min: lexer-iden_error
+	cat tests/iden_error.min | bin/./lexer-iden_error > output/iden_error.out
 
+lexer-iden_error: flex-iden_error
+	$(CC) $(CFLAGS) bin/lexer-iden_error lex.yy.c $(LFLAGS)
 
+flex-iden_error:
+	$(F) src/iden_error.lex
 

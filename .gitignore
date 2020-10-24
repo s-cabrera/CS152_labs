@@ -4,3 +4,7 @@
 /.vs/CS152_labs/v16/Browse.VC.db-wal
 /.vs/CS152_labs/v16/Browse.VC.db-shm
 /.vs/CS152_labs/v16/Browse.VC.db
+
+output/*
+bin/*
+lex.yy.c

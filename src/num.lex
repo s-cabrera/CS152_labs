@@ -1,14 +1,14 @@
 /* Regexes */
 
 digit 			[0-9]
-float				{digit}*\.?{digit}*
-whitespace	[ \r\t\n]
+whitespace	[ \r\t]
 
 
 %%
 
-{float}												printf("NUM %s\n", yytext);
+{digit}+											printf("NUM %s\n", yytext);
 whitespace										;
+\n														;
 .															printf("NON-NUM %s\n", yytext);
 
 %%
