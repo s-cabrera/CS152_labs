@@ -3,15 +3,14 @@
 
 %%
 
-/* 5) Special Symbols */
-
-;								printf("SEMICOLON");
-(								printf("L_PAREN");
-)								printf("R_PAREN");
-[								printf("L_SQUARE_BRACKET");
-]								printf("R_SQUARE_BRACKET");
-:								printf("COLON");
-,								printf("COMMA");
+\;								printf("SEMICOLON\n");
+\(								printf("L_PAREN\n");
+\)								printf("R_PAREN\n");
+\[								printf("L_SQUARE_BRACKET\n");
+\]								printf("R_SQUARE_BRACKET\n");
+\:								printf("COLON\n");
+\,								printf("COMMA\n");
+\:=								printf("ASSIGN\n");
 
 %%
 

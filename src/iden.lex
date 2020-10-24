@@ -7,7 +7,7 @@ whitespace	[ \r\t]
 %%
 
 {alpha}+[0-9a-zA-Z_]* 				printf("IDEN %s\n", yytext);
-whitespace										;
+{whitespace}									;
 \n														;
 .															printf("NON-IDEN %s\n", yytext);
 

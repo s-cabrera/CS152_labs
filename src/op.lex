@@ -6,7 +6,7 @@
 \*						printf("MULT\n");
 \/						printf("DIV\n");
 \%						printf("MOD\n");
-\=						printf("EQ\n");
+\=\=					printf("EQ\n");
 \<\>					printf("NEQ\n");
 \<\=					printf("LTE\n");
 \>\=					printf("GTE\n");

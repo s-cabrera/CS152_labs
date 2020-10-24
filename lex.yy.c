@@ -446,7 +446,7 @@ int yy_flex_debug = 0;
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
 #line 1 "src/iden_error.lex"
-#line 7 "src/iden_error.lex"
+#line 8 "src/iden_error.lex"
 	int currLine = 1;
 	int currPos = 1;	
 #line 453 "lex.yy.c"
@@ -667,7 +667,7 @@ YY_DECL
 		}
 
 	{
-#line 11 "src/iden_error.lex"
+#line 12 "src/iden_error.lex"
 
 
 #line 674 "lex.yy.c"
@@ -729,43 +729,43 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 13 "src/iden_error.lex"
+#line 14 "src/iden_error.lex"
 {	printf("Number: %s\n", yytext); currPos += yyleng;}
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 14 "src/iden_error.lex"
+#line 15 "src/iden_error.lex"
 {	printf("Error	at line %d, column %d: identifier \"%s\" must begin with a letter\n", currLine, currPos, yytext); currPos += yyleng;}
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 15 "src/iden_error.lex"
+#line 16 "src/iden_error.lex"
 { printf("Error at line %d, column %d: identifier \"%s\" must begin with a letter\n", currLine, currPos, yytext); currPos += yyleng;}
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 16 "src/iden_error.lex"
+#line 17 "src/iden_error.lex"
 { printf("Error at line %d, column %d: identifier \"%s\" cannot end with an underscore\n", currLine, currPos, yytext); currPos += yyleng;}
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 17 "src/iden_error.lex"
+#line 18 "src/iden_error.lex"
 { printf("Identifier: %s\n", yytext);	currPos += yyleng;}
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 19 "src/iden_error.lex"
+#line 20 "src/iden_error.lex"
 {currPos += yyleng;}
 	YY_BREAK
 case 7:
 /* rule 7 can match eol */
 YY_RULE_SETUP
-#line 20 "src/iden_error.lex"
+#line 21 "src/iden_error.lex"
 { ++currLine;		currPos = 1;}
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 22 "src/iden_error.lex"
+#line 23 "src/iden_error.lex"
 ECHO;
 	YY_BREAK
 #line 772 "lex.yy.c"
@@ -1773,7 +1773,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 22 "src/iden_error.lex"
+#line 23 "src/iden_error.lex"
 
 
 

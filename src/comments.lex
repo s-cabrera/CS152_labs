@@ -1,8 +1,7 @@
 /* Comments ## with code until newline*/
 /*Regex*/
-comment = {##[^\n]*\n}
+comment		##[^\n]*\n
 
-##
 %%
 {comment}						printf("COMMENT\n");
 %%
