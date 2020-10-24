@@ -5,16 +5,24 @@ by Stephanie Cabrera and Richard Duong
 ------------------------------------------------------------------------------
 <br>
 
-## Phases
+## Phase 1: Lexical Analysis
+The goal of this phase is to tokenize source code written in the MINI-L language
 <br>
 
-### Phase 1: Lexical Analysis
-+ The goal of this phase is to tokenize source code written in the MINI-L language
-+ We should:
-  + Determine priorities in terms of types of tokens: e.g. reserved words, special symbols, etc.
-  + Establish a precedence in detail for common prefixes: e.g. <, <=, and <>
-  + Be able to identify and log errors from invalid tokens
-  + Provide the column and character count for errors
-  + Successfully output tokens from parsing the input into a file
+### Lexer Goals
++ Determine a priority for same length tokens (e.g. identifiers & keywords)
++ Be able to identify and log errors from invalid tokens
++ Provide the column and character count for errors
++ Successfully output tokens from parsing the input into a file
++ Develop and run tests on weird boundary cases and conditions
+
+### Testing
++ Keywords
++ Operators
++ Special Symbols
++ Identifiers
++ Numbers
++ Comments
++ Errors
 
 <br><br>

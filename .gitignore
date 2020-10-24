@@ -1,0 +1,6 @@
+*.swp
+/.vs/slnx.sqlite
+/.vs/CS152_labs/v16/Browse.VC.opendb
+/.vs/CS152_labs/v16/Browse.VC.db-wal
+/.vs/CS152_labs/v16/Browse.VC.db-shm
+/.vs/CS152_labs/v16/Browse.VC.db
