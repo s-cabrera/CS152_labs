@@ -21,7 +21,7 @@ flex-mini:
 	$(F) $(FNAME)
 
 clean:
-	rm lexer lex.yy.c output/*.out
+	rm lexer lex.yy.c output/*.out bin/*
 
 # ============ Custom Makes ============ #
 
