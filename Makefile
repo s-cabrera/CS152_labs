@@ -4,7 +4,10 @@ CFLAGS=-o
 LFLAGS=-lfl
 FNAME=mini.lex
 
-# ============ Core Makes ============= #
+###################################
+# ========== Core Makes ========= #
+###################################
+
 primes.min:	lexer-mini
 	cat tests/primes.min | bin/./lexer > output/primes.out
 
@@ -23,12 +26,20 @@ flex-mini:
 clean:
 	rm lexer lex.yy.c output/*.out bin/*
 
-# ============ Custom Makes ============ #
+#####################################
+# ========== Custom Makes ========= #
+#####################################
 
-### All Tests
-all: op.min iden.min num.min white.min
 
-### Operators
+
+# ===== Make All ===== #
+
+all: op.min iden.min num.min keyword.min special.min comments.min iden_error.min unrec_error.min
+
+
+
+# ===== Operators ===== #
+
 op.min: lexer-op
 	cat tests/op.min | bin/./lexer-op > output/op.out
 
@@ -38,7 +49,11 @@ lexer-op: flex-op
 flex-op:
 	$(F) src/op.lex
 
-### Identifiers
+
+
+
+# ===== Identifiers ===== #
+
 iden.min: lexer-iden
 	cat tests/iden.min | bin/./lexer-iden > output/iden.out
 
@@ -48,7 +63,11 @@ lexer-iden: flex-iden
 flex-iden:
 	$(F) src/iden.lex
 
-### Numbers
+
+
+
+# ===== Numbers ===== #
+
 num.min: lexer-num
 	cat tests/num.min | bin/./lexer-num > output/num.out
 
@@ -58,7 +77,49 @@ lexer-num: flex-num
 flex-num: 
 	$(F) src/num.lex
 
-### Error Symbols
+
+
+
+# ===== Keywords ===== #
+
+keyword.min: lexer-keyword
+	cat tests/keyword.min | bin/./lexer-keyword > output/keyword.out
+
+lexer-keyword: flex-keyword
+	$(CC) $(CFLAGS) bin/lexer-keyword lex.yy.c $(LFLAGS)	
+
+flex-keyword:
+	$(F) src/keyword.lex
+
+
+
+# ===== Special ===== #
+
+special.min: lexer-special
+	cat tests/special.min | bin/./lexer-special > output/special.out
+
+lexer-special: flex-special
+	$(CC) $(CFLAGS) bin/lexer-special lex.yy.c $(LFLAGS)
+
+flex-special:
+	$(F) src/special.lex
+
+
+
+# ===== Comments ===== #
+comments.min: lexer-comments
+	cat tests/comments.min | bin/./lexer-comments > output/comments.out
+
+lexer-comments: flex-comments
+	$(CC) $(CFLAGS) bin/lexer-comments lex.yy.c $(LFLAGS)
+
+flex-comments:
+	$(F) src/comments.lex
+
+
+
+# ===== Error Symbols ===== #
+
 unrec_error.min: lexer-unrec_error
 	cat tests/unrec_error.min | bin/./lexer-unrec_error > output/unrec_error.out
 
@@ -68,7 +129,10 @@ lexer-unrec_error: flex-unrec_error
 flex-unrec_error:
 	$(F) src/unrec_error.lex
 	
-### Error Identifiers
+
+
+# ===== Error Identifiers ===== #
+
 iden_error.min: lexer-iden_error
 	cat tests/iden_error.min | bin/./lexer-iden_error > output/iden_error.out
 
