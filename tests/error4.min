@@ -5,7 +5,8 @@ beginlocals
 n : integer;
 endlocals
 beginbody
-   read n;
-   n := n + 1=
-   write n;
+    read n;
+		## some random comment why not
+    n := n + 1=
+    write n;
 endbody

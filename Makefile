@@ -8,9 +8,9 @@ FNAME=mini.lex
 # ========== Core Makes ========= #
 ###################################
 
-all: clean mini tests
+all: mini tests
 
-mini: primes.min mytest.min fibonacci.min integrationtests.min error1.min error2.min error3.min error4.min
+mini: primes.min mytest.min fibonacci.min
 
 fibonacci.min: lexer-mini
 	cat tests/fibonacci.min | bin/./lexer > output/fibonacci.out
@@ -20,9 +20,6 @@ primes.min:	lexer-mini
 
 mytest.min: lexer-mini
 	cat tests/mytest.min | bin/./lexer > output/mytest.out
-
-integrationtests.min: lexer-mini
-	cat tests/integrationtests.min | bin/./lexer > output/integrationtests.out
 
 error1.min: lexer-mini
 	cat tests/error1.min | bin/./lexer > output/error1.out
