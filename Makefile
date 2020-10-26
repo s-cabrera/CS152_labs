@@ -8,7 +8,7 @@ FNAME=mini.lex
 # ========== Core Makes ========= #
 ###################################
 
-all: clean mini tests
+all: mini tests
 
 mini: primes.min mytest.min fibonacci.min integrationtests.min error1.min error2.min error3.min error4.min
 
