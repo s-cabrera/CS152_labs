@@ -10,7 +10,7 @@ FNAME=mini.lex
 
 all: clean mini tests
 
-mini: primes.min mytest.min fibonacci.min integrationtests.min 
+mini: primes.min mytest.min fibonacci.min integrationtests.min error1.min error2.min error3.min error4.min
 
 fibonacci.min: lexer-mini
 	cat tests/fibonacci.min | bin/./lexer > output/fibonacci.out
