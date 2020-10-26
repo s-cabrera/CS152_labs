@@ -5,6 +5,7 @@
 /.vs/CS152_labs/v16/Browse.VC.db-shm
 /.vs/CS152_labs/v16/Browse.VC.db
 
+tests_output/*
 output/*
 bin/*
 lex.yy.c

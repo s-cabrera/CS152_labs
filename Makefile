@@ -24,6 +24,18 @@ mytest.min: lexer-mini
 integrationtests.min: lexer-mini
 	cat tests/integrationtests.min | bin/./lexer > output/integrationtests.out
 
+error1.min: lexer-mini
+	cat tests/error1.min | bin/./lexer > output/error1.out
+
+error2.min: lexer-mini
+	cat tests/error2.min | bin/./lexer > output/error2.out
+
+error3.min: lexer-mini
+	cat tests/error3.min | bin/./lexer > output/error3.out
+
+error4.min: lexer-mini
+	cat tests/error4.min | bin/./lexer > output/error4.out
+
 lexer-mini: flex-mini
 	$(CC) $(CFLAGS) bin/lexer lex.yy.c $(LFLAGS)
 
